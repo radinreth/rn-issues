@@ -9,3 +9,14 @@ Execution failed for task ':app:bundleReleaseJsAndAssets'.
 ```
 $ find . -type l -exec test ! -e {} \; -delete
 ```
+
+2.
+unable to load script from assets index.android.bundle
+
+#solution:
+
+```
+- mkdir android/app/src/main/assets
+- react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+- react-native run-android
+```
