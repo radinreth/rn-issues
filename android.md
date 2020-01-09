@@ -42,3 +42,11 @@ this.ref.call()
 
 <MyComponent onRef={ele=>(this.ref=ele)}/>
 ```
+
+4. 
+Generate many apks
+
+```
+def enableSeparateBuildPerCPUArchitecture = false|true
+```
+
